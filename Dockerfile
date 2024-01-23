@@ -14,6 +14,6 @@ ARG TASKDDATA
 ENV TASKDDATA ${TASKDDATA:-/var/taskd}
 
 # Configure container
-VOLUME ["${TASKDDATA}"]
+#VOLUME ["${TASKDDATA}"]
 EXPOSE 53589
 ENTRYPOINT ["/app/taskd/run.sh"]
